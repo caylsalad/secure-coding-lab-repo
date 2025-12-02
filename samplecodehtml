@@ -1,0 +1,73 @@
+<!-- Begin by entering the doctype, html, and head elements. Inside the head element, enter the content from the screen shot on Lab 1.5's instructions. You can replace these instructions, but leave the others in place, please -->
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Cayleigh Shaw"> 
+        <meta name="description" content="CSCI 1210 Lab 6">
+        <meta name="keywords" content="csci, 1210, labs, lab 6">
+        <title>Cayleigh Shaw's Lab 6</title>
+        <!--<link rel="icon" href="http://csci1210.com/labs/lab5/images/aboutme.png">
+        <link rel="stylesheet" href="css/lab5.css">-->
+        
+        <!-- 
+            Author:				Cayleigh Shaw
+            Date:				10.28.23
+            Last revised:		10.28.23
+            Assignment:			Lab 6
+            Purpose:			Tables in CSS
+        -->
+    </head>
+<body>
+    <div>
+<!-- place this in an h1 element and use your name -->
+	<h1><em>Cayleigh Shaw</em></h1> 
+<!-- Add a <hr> element here -->
+	<hr>
+<!-- place this in an h2 element -->
+	<h2>Hometown</h2>	
+<!-- Enter a brief paragraph here telling the reader where you are from and how long you've lived there. Tell a little about your hometown (estimated population, how old, things like that). Tell the reader what your hometown is known for, locally, regionally, nationally, or all three (for example, 'The City of Elizabethton is known throughout the region for its iconic covered bridge') -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum officia dolore labore, earum aspernatur. Neque vitae nisi voluptate deserunt voluptatum dolorem, aliquam ipsam aut. Nisi ea dolores maxime, maiores doloremque numquam, assumenda consequuntur labore nobis enim porro, ut et. Vel nihil eos mollitia asperiores obcaecati reprehenderit cumque itaque optio!
+    </p>
+<!-- Add a <hr> element here -->
+    <hr>
+<!-- place this in an h2 element -->
+	<h2>Education</h2>
+<!-- Enter a brief paragraph (3 sentences minimum). In this paragraph, tell the reader your name, your major, what year you are, when you expect to graduate. Tell the reader what interests you most about your major. -->
+	<p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nostrum pariatur vitae sed deleniti inventore dignissimos, odio, iste dicta, nihil eum numquam quod aliquam corporis ea. Explicabo voluptatem dolore voluptatum dolorem possimus molestias at sapiente sequi, odit suscipit tenetur eius perspiciatis eaque sint earum impedit. Eius qui iste esse neque?
+    </p>
+<!-- Add a <hr> element here -->
+	<hr>
+<!-- place this in an h2 element -->
+	<h2>Things I did in High School</h2>		
+<!-- Enter an ordered list, 3 items minimum, telling the reader some of the things you did in high school, in order of most favorite to least favorite. -->
+	<ol>
+        <li>Theatre, as a stagehand</li>
+        <li>Key Club</li>
+        <li>Beta Club</li>
+    </ol>
+<!-- Add a <hr> element here -->
+	<hr>	
+<!-- place this in an h2 element -->
+	<h2>Places I'd Like to Visit</h2>	
+<!-- Enter an unordered list, 3 items minimum, telling the reader three places you would like to visit. -->
+	<ul>
+        <li>London, UK</li>
+        <li>Cairo, Egypt</li>
+        <li>Queensland, Australia</li>
+    </ul>
+<!-- Add a <hr> element here -->
+    <hr>
+<!-- place this in an h2 element -->
+	<h2>Contact Me At:</h2>	
+<!-- Enter a definition list here with two items. The definition term should be 'Email'. The definition data element should be your campus email address. -->
+    <dl>
+        <dt>Email</dt>
+        <dd>shawcm1@etsu.edu</dd>
+    </dl>
+        </div>
+        <script src='/js/w3c.js'></script>
+</body>
+</html>
