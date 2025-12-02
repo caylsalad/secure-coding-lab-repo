@@ -1,0 +1,111 @@
+namespace TreeSearching;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var root = new TreeNode<char>('D'); //root is D
+        root.AddChild('B');
+        root.AddChild('F');
+        //left child B of root D is first element in list of children
+        root.children[0].AddChild('A');
+        root.children[0].AddChild('C');
+        //right child F of root D is second element in list of children
+        root.children[1].AddChild('E');
+        root.children[1].AddChild('G');
+
+        Console.WriteLine("In Order");
+        TreeNode<char>.TraverseInOrder(root);
+        Console.WriteLine();
+
+        Console.WriteLine("Pre Order");
+        TreeNode<char>.TraversePreOrder(root);
+        Console.WriteLine();
+
+        Console.WriteLine("Post Order");
+        TreeNode<char>.TraversePostOrder(root);
+    }
+}
+
+class TreeNode<T>
+{
+    T data;
+    public List<TreeNode<T>> children;
+
+    public TreeNode(T data)
+    {
+        this.data = data;
+        children = new List<TreeNode<T>>();
+    }
+
+    public void AddChild(T data)
+    {
+        var child = new TreeNode<T>(data);
+        children.Add(child);
+    }
+
+    public static void TraverseInOrder(TreeNode<T> root)
+    {
+        if (root == null) return; //guard clause
+
+        //Left
+        for(int i = 0; i < root.children.Count / 2; i++)
+        {
+            TraverseInOrder(root.children[i]);
+        }
+
+        //Self
+        Console.WriteLine(root.data);
+
+        //Right
+        for (int i = (root.children.Count / 2); i < root.children.Count; i++)
+        {
+            TraverseInOrder(root.children[i]);
+        }
+    }
+
+    //copy of tree
+    public static void TraversePreOrder(TreeNode<T> root)
+    {
+        if (root == null) return; //guard clause
+
+        //Self
+        Console.WriteLine(root.data);
+
+        //Left
+        for (int i = 0; i < root.children.Count / 2; i++)
+        {
+            TraversePreOrder(root.children[i]);
+        }
+
+        
+        //Right
+        for (int i = (root.children.Count / 2); i < root.children.Count; i++)
+        {
+            TraversePreOrder(root.children[i]);
+        }
+    }
+
+    //delete a tree
+    public static void TraversePostOrder(TreeNode<T> root)
+    {
+        if (root == null) return; //guard clause
+
+        //Left
+        for (int i = 0; i < root.children.Count / 2; i++)
+        {
+            TraversePostOrder(root.children[i]);
+        }
+
+        //Right
+        for (int i = (root.children.Count / 2); i < root.children.Count; i++)
+        {
+            TraversePostOrder(root.children[i]);
+        }
+
+        //Self
+        Console.WriteLine(root.data);
+    }
+}
+
+//"this" keyword: THIS object that you are working on right now -- it's a pointer
